@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14% 10%;
+    --primary: 33 58% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 33 30% 92%;
+    --secondary-foreground: 20 14% 20%;
+    --muted: 33 20% 94%;
+    --muted-foreground: 20 10% 45%;
+    --accent: 33 20% 94%;
+    --accent-foreground: 20 14% 20%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 33 20% 88%;
+    --input: 33 20% 88%;
+    --ring: 33 58% 50%;
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 20 14% 10%;
+    --foreground: 33 20% 94%;
+    --card: 20 14% 12%;
+    --card-foreground: 33 20% 94%;
+    --popover: 20 14% 12%;
+    --popover-foreground: 33 20% 94%;
+    --primary: 33 58% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 20 14% 18%;
+    --secondary-foreground: 33 20% 94%;
+    --muted: 20 14% 18%;
+    --muted-foreground: 33 10% 60%;
+    --accent: 20 14% 18%;
+    --accent-foreground: 33 20% 94%;
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 20 14% 20%;
+    --input: 20 14% 20%;
+    --ring: 33 58% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    cursor: auto;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Steam animation for hero */
+@keyframes steam {
+  0%   { opacity: 0.4; transform: translateY(0) scaleX(1); }
+  50%  { opacity: 0.2; transform: translateY(-12px) scaleX(1.2); }
+  100% { opacity: 0;   transform: translateY(-24px) scaleX(0.8); }
+}
+
+.steam-line {
+  animation: steam 2.5s ease-in-out infinite;
+}
+.steam-line:nth-child(2) { animation-delay: 0.4s; }
+.steam-line:nth-child(3) { animation-delay: 0.8s; }
