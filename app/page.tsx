@@ -383,12 +383,11 @@ export default function Home() {
       {/* ── NAV ── */}
       <nav
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-5 transition-all duration-300",
+          "fixed top-0 left-0 right-0 z-50 flex items-center justify-center px-4 py-4 transition-all duration-300",
           navScrolled &&
-            "bg-[#024996]/95 backdrop-blur-md py-3.5 shadow-xl shadow-black/20",
+            "bg-[#024996]/95 backdrop-blur-md py-3 shadow-xl shadow-black/20",
         )}
       >
-
         <LimelightNav
           items={mobileNavItems}
           className="bg-white/5 border border-white/10 backdrop-blur-sm"
@@ -396,7 +395,7 @@ export default function Home() {
           iconClassName="text-white"
         />
 
-        <div className="flex items-center gap-3">
+        <div className="absolute right-4 flex items-center gap-3">
           <ThemeToggle onChange={setIsDark} />
         </div>
       </nav>
