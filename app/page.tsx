@@ -408,15 +408,9 @@ export default function Home() {
       >
 
         <div className="relative text-center px-6 animate-fade-up text-white flex flex-col items-center">
-          <div className="mb-16">
-            <svg width="90" height="90" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="23" cy="23" r="23" fill="#5a5a5a"/>
-              <circle cx="23" cy="23" r="20.5" fill="#3a3a3a"/>
-              <circle cx="23" cy="23" r="19" fill="#1565C0"/>
-              <rect x="9" y="16" width="28" height="14" rx="0" fill="white"/>
-              <text x="23" y="26" fontFamily="Arial Black, Arial, sans-serif" fontWeight="900" fontSize="8.5" fill="#0d2b6e" textAnchor="middle">nThat</text>
-            </svg>
-          </div>
+          <p className="text-xs font-medium tracking-[0.25em] uppercase text-white/50 mb-16">
+            "there are no strangers here"
+          </p>
           <h1 className="font-serif text-6xl md:text-8xl font-bold leading-tight mb-12 bg-white text-[#024996] px-10 py-4 rounded-none">
             nThat
           </h1>
