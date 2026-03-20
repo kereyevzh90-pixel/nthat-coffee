@@ -51,7 +51,7 @@ export function MenuModal({ isOpen, onClose, title, items, imgSrc }: MenuModalPr
           isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
         )}
       >
-        <div className="bg-white rounded-none shadow-2xl overflow-hidden flex flex-col max-h-[85vh] mx-4">
+        <div className="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[85vh] mx-4">
 
           {/* Photo header */}
           {imgSrc ? (
@@ -59,14 +59,14 @@ export function MenuModal({ isOpen, onClose, title, items, imgSrc }: MenuModalPr
               <Image src={imgSrc} alt={title} fill className="object-cover" />
               <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/50" />
               <h3 className="absolute bottom-4 left-6 text-3xl font-black uppercase tracking-tight text-white drop-shadow">{title}</h3>
-              <button onClick={onClose} className="absolute top-4 right-4 p-1.5 rounded-none bg-black/30 hover:bg-black/50 transition-colors">
+              <button onClick={onClose} className="absolute top-4 right-4 p-1.5 rounded-full bg-black/30 hover:bg-black/50 transition-colors">
                 <X className="w-4 h-4 text-white" />
               </button>
             </div>
           ) : (
             <div className="flex items-center justify-between px-6 pt-6 pb-4 border-b border-neutral-100">
               <h3 className="text-3xl font-black uppercase tracking-tight text-[#0a1628]">{title}</h3>
-              <button onClick={onClose} className="p-2 rounded-none hover:bg-neutral-100 transition-colors">
+              <button onClick={onClose} className="p-2 rounded-full hover:bg-neutral-100 transition-colors">
                 <X className="w-5 h-5 text-neutral-400" />
               </button>
             </div>
@@ -78,8 +78,8 @@ export function MenuModal({ isOpen, onClose, title, items, imgSrc }: MenuModalPr
               item.name.startsWith("—") || item.name.startsWith("*") ? (
                 <p key={i} className="text-xs text-neutral-400 text-center py-2 font-medium tracking-widest uppercase">{item.name}</p>
               ) : item.imgSrc ? (
-                <div key={i} className="flex items-center gap-3 p-2 rounded-none hover:bg-neutral-50 transition-colors border border-neutral-100">
-                  <div className="relative w-16 h-16 rounded-none overflow-hidden flex-shrink-0">
+                <div key={i} className="flex items-center gap-3 p-2 rounded-2xl hover:bg-neutral-50 transition-colors border border-neutral-100">
+                  <div className="relative w-16 h-16 rounded-xl overflow-hidden flex-shrink-0">
                     <Image src={item.imgSrc} alt={item.name} fill className="object-cover" />
                   </div>
                   <div className="flex-1 min-w-0">

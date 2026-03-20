@@ -43,7 +43,7 @@ const BentoCard = ({
   <div
     key={name}
     className={cn(
-      "group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-none",
+      "group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-xl",
       "bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]",
       "transform-gpu dark:bg-black dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]",
       className,
@@ -52,7 +52,7 @@ const BentoCard = ({
     <div>{background}</div>
     <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 p-6 transition-all duration-300 group-hover:-translate-y-10 relative">
       {/* gradient behind text */}
-      <div className="absolute inset-0 -mx-6 -mb-6 bg-gradient-to-t from-black/70 via-black/30 to-transparent rounded-none" />
+      <div className="absolute inset-0 -mx-6 -mb-6 bg-gradient-to-t from-black/70 via-black/30 to-transparent rounded-b-xl" />
       <Icon className="relative h-12 w-12 origin-left transform-gpu text-white drop-shadow-lg transition-all duration-300 ease-in-out group-hover:scale-75" />
       <h3 className="relative text-xl font-semibold text-white drop-shadow-md">
         {name}

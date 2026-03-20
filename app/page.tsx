@@ -416,7 +416,7 @@ export default function Home() {
           </h1>
           <a
             href="#menu"
-            className="inline-block bg-white/15 border border-white/30 text-white px-10 py-4 rounded-none font-medium tracking-wide hover:bg-white/25 transition-all hover:-translate-y-1"
+            className="inline-block bg-white/15 border border-white/30 text-white px-10 py-4 rounded-full font-medium tracking-wide hover:bg-white/25 transition-all hover:-translate-y-1"
           >
             Смотреть меню
           </a>
@@ -446,7 +446,7 @@ export default function Home() {
                 key={tab}
                 onClick={() => setActiveTab(tab)}
                 className={cn(
-                  "px-5 py-2.5 rounded-none border-2 text-sm font-medium transition-all",
+                  "px-5 py-2.5 rounded-full border-2 text-sm font-medium transition-all",
                   activeTab === tab
                     ? "bg-[#024996] border-[#024996] text-white"
                     : "border-[#024996]/20 text-neutral-500 hover:border-[#024996] hover:text-[#024996]",
@@ -546,7 +546,7 @@ export default function Home() {
           </div>
 
           <div className="relative h-[420px]">
-            <div className="absolute right-0 top-0 w-3/4 h-[300px] rounded-none overflow-hidden">
+            <div className="absolute right-0 top-0 w-3/4 h-[300px] rounded-2xl overflow-hidden">
               <Image
                 src="/photo_40_2026-03-19_21-41-52.jpg"
                 alt="Flat White nThat"
@@ -554,7 +554,7 @@ export default function Home() {
                 className="object-cover"
               />
             </div>
-            <div className="absolute left-0 bottom-0 w-[55%] h-[200px] rounded-none overflow-hidden border-4 border-[#024996]">
+            <div className="absolute left-0 bottom-0 w-[55%] h-[200px] rounded-2xl overflow-hidden border-4 border-[#024996]">
               <Image
                 src="/photo_41_2026-03-19_21-41-52.jpg"
                 alt="Iced Latte nThat"
@@ -593,7 +593,7 @@ export default function Home() {
                   key={img.alt}
                   onClick={() => setLightboxIndex(index)}
                   className={cn(
-                    "relative overflow-hidden rounded-none group cursor-pointer",
+                    "relative overflow-hidden rounded-2xl group cursor-pointer",
                     tall ? "row-span-2" : "",
                     wide ? "col-span-2" : "",
                     tall ? "min-h-[420px]" : "min-h-[200px]",
@@ -637,7 +637,7 @@ export default function Home() {
               href="https://wa.me/77756160097?text=Хочу заказать мерч nThat"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-none bg-white hover:bg-white/90 text-[#024996] text-sm font-semibold transition-colors whitespace-nowrap"
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-white hover:bg-white/90 text-[#024996] text-sm font-semibold transition-colors whitespace-nowrap"
             >
               Заказать через WhatsApp
             </a>
@@ -646,7 +646,7 @@ export default function Home() {
           {/* Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {/* QARA KOFE tee */}
-            <div className="group rounded-none overflow-hidden cursor-pointer">
+            <div className="group rounded-2xl overflow-hidden cursor-pointer">
               <div className="relative h-80 overflow-hidden">
                 <Image
                   src="/Снимок экрана 2026-03-19 210028.png"
@@ -654,7 +654,7 @@ export default function Home() {
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-none shadow-lg">
+                <div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-sm shadow-lg">
                   <p className="text-[#024996] font-bold text-sm tracking-wide leading-tight">QARA KOFE</p>
                   <p className="text-[#024996]/60 text-[10px] tracking-widest uppercase">DRP'01—02</p>
                 </div>
@@ -666,7 +666,7 @@ export default function Home() {
             </div>
 
             {/* Herday tee */}
-            <div className="group rounded-none overflow-hidden cursor-pointer">
+            <div className="group rounded-2xl overflow-hidden cursor-pointer">
               <div className="relative h-80 overflow-hidden">
                 <Image
                   src="/Снимок экрана 2026-03-19 205216.png"
@@ -674,7 +674,7 @@ export default function Home() {
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-none shadow-lg">
+                <div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-sm shadow-lg">
                   <p className="text-[#024996] font-bold text-sm tracking-wide leading-tight">Herday</p>
                   <p className="text-[#024996]/60 text-[10px] tracking-widest uppercase">DRP'01—02</p>
                 </div>
@@ -686,7 +686,7 @@ export default function Home() {
             </div>
 
             {/* Sweatshirt collection */}
-            <div className="group rounded-none overflow-hidden cursor-pointer">
+            <div className="group rounded-2xl overflow-hidden cursor-pointer">
               <div className="relative h-80 overflow-hidden">
                 <Image
                   src="/Снимок экрана 2026-03-19 205035.png"
@@ -694,7 +694,7 @@ export default function Home() {
                   fill
                   className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-none shadow-lg">
+                <div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-sm shadow-lg">
                   <p className="text-[#024996] font-bold text-sm tracking-wide leading-tight">nThat®</p>
                   <p className="text-[#024996]/60 text-[10px] tracking-widest uppercase">Sweatshirt collection</p>
                 </div>
@@ -725,7 +725,7 @@ export default function Home() {
             href="https://wa.me/77756160097?text=Хочу в команду nthat"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-10 py-4 rounded-none bg-[#024996] hover:bg-[#024996] text-white font-medium transition-colors text-base"
+            className="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-[#024996] hover:bg-[#024996] text-white font-medium transition-colors text-base"
           >
             Хочу в команду «nthat»
           </a>
@@ -762,7 +762,7 @@ export default function Home() {
                 },
               ].map(({ Icon, label, value }) => (
                 <div key={label} className="flex gap-4 items-start">
-                  <div className="mt-0.5 p-2 rounded-none bg-[#024996]/10">
+                  <div className="mt-0.5 p-2 rounded-xl bg-[#024996]/10">
                     <Icon className="w-5 h-5 text-[#024996]" />
                   </div>
                   <div>
@@ -779,7 +779,7 @@ export default function Home() {
                 <a
                   key={s}
                   href="#"
-                  className="px-5 py-2 rounded-none border-2 border-[#024996]/20 text-sm font-medium text-neutral-500 hover:border-[#024996] hover:text-[#024996] transition-colors"
+                  className="px-5 py-2 rounded-full border-2 border-[#024996]/20 text-sm font-medium text-neutral-500 hover:border-[#024996] hover:text-[#024996] transition-colors"
                 >
                   {s}
                 </a>
@@ -788,7 +788,7 @@ export default function Home() {
           </div>
 
           {/* Map placeholder with Unsplash aerial */}
-          <div className="relative h-[380px] rounded-none overflow-hidden shadow-xl shadow-blue-900/10">
+          <div className="relative h-[380px] rounded-2xl overflow-hidden shadow-xl shadow-blue-900/10">
             <Image
               src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80"
               alt="Москва"

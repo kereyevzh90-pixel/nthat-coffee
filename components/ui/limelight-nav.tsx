@@ -51,7 +51,7 @@ export const LimelightNav = ({
   };
 
   return (
-    <nav className={`relative inline-flex items-center h-16 rounded-none px-2 ${className}`}>
+    <nav className={`relative inline-flex items-center h-16 rounded-2xl px-2 ${className}`}>
       {items.map(({ id, icon, label, onClick }, index) => (
         <a
           key={id}
@@ -70,7 +70,7 @@ export const LimelightNav = ({
 
       <div
         ref={limelightRef}
-        className={`absolute top-0 z-10 w-11 h-[4px] rounded-none ${
+        className={`absolute top-0 z-10 w-11 h-[4px] rounded-full ${
           isReady ? 'transition-[left] duration-300 ease-in-out' : ''
         } ${limelightClassName ?? ''}`}
         style={{ left: '-999px' }}
