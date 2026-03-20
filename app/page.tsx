@@ -388,16 +388,6 @@ export default function Home() {
             "bg-[#024996]/95 backdrop-blur-md py-3.5 shadow-xl shadow-black/20",
         )}
       >
-        {/* nThat Logo */}
-        <div className="flex items-center gap-2.5">
-          <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="23" cy="23" r="23" fill="#5a5a5a"/>
-            <circle cx="23" cy="23" r="20.5" fill="#3a3a3a"/>
-            <circle cx="23" cy="23" r="19" fill="#1565C0"/>
-            <rect x="9" y="16" width="28" height="14" rx="0" fill="white"/>
-            <text x="23" y="26" fontFamily="Arial Black, Arial, sans-serif" fontWeight="900" fontSize="8.5" fill="#0d2b6e" textAnchor="middle">nThat</text>
-          </svg>
-        </div>
 
         <LimelightNav
           items={mobileNavItems}
