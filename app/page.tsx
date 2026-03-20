@@ -409,7 +409,7 @@ export default function Home() {
 
         <div className="relative text-center px-6 animate-fade-up text-white flex flex-col items-center">
           <p className="text-xs font-medium tracking-[0.25em] uppercase text-white/50 mb-16">
-            "there are no strangers here"
+            "no strangers here"
           </p>
           <h1 className="font-serif text-6xl md:text-8xl font-bold leading-tight mb-12 bg-white text-[#024996] px-10 py-4 rounded-none">
             nThat
